@@ -23,12 +23,14 @@ header{
     padding: 5% 10%;
 }
 
-.navegador form{
-    /* padding: 10px; */
+.navHeader{
+    display: flex;
+    justify-content: space-between;
 }
 
 .headerNav{
     display: flex;
+    justify-content: space-between;
     list-style: none;
     font-weight: 500;
     color: #242E52;
@@ -37,6 +39,7 @@ header{
 
 .headerNav li{
     display: inline-block;
+    margin: 0 5px;
 }
 
 .buttonSubmit{
@@ -144,12 +147,12 @@ h1{
     padding: 10 25;
     background: #F3603B;
     border-style: none;
-    color: white
+    color: white;
 }
 
 .central2derecha h4{
     padding-bottom: 15px;
-    font-weight: 700
+    font-weight: 700;
     color: #323851;
 }
 
@@ -174,6 +177,58 @@ h1{
     width: 70%;
 }
 
-.central2Der{
+.secOpiniones h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
 
+.divOpiniones{
+    display: flex;
+}
+
+.opinionesCentrado img{
+    width: 15%;
+}
+
+.opinionesCentrado h6{
+    padding: 3%;
+}
+
+.opinionesCentrado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+    margin: 5px;
+}
+
+.secOpiniones form{
+    display: flex;
+    justify-content: center;
+    margin: 5% 0 15% 0;
+}
+
+.simplifySection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-image: url(imagenes/fondoAnaranjado.jpeg);
+}
+
+.simplifySection h2{
+    width: 40%;
+    color: white;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+   
+    margin: 5% 20%;
+}
+
+input:hover{
+    text-decoration: underline;
 }
