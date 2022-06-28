@@ -13,7 +13,7 @@ body{
     width: 80%;
     max-width: 1440px;
     margin: 0 auto;
-    background-color: green;
+    background: #FFFFFF;
 }
 
 header{
@@ -61,10 +61,7 @@ h1, h2, h4, h6{
 
 .central{
     display: flex;
-    /* align-content: center; */
     justify-content:space-between; 
-    /* margin: auto; */
-    background-color: antiquewhite;
     margin: 0 10% 0 10%;
 }
 
@@ -74,7 +71,6 @@ h1, h2, h4, h6{
     justify-content: center;
     align-content: left;
     width: 43%;
-    background-color: yellow;
 }
 
 h1{
@@ -86,9 +82,12 @@ h1{
     width: 77%;
 }
 
+.centralIzq form{
+    margin-top: 5%;
+}
+
 .centralDer{
     display: flex;
-    background-color: aqua;
     width: 50%;
     justify-content: right;
 }
@@ -100,9 +99,7 @@ h1{
 .central2{
     display: flex;
     align-content: center;
-    /* justify-content: space-between; */
     margin: 0 10% 0 10%;
-    background-color: blue;
 }
 
 .central2izq{
@@ -111,7 +108,6 @@ h1{
     flex-direction: column;
     justify-content:flex-start;
     align-items:flex-start;
-    background-color: aqua;
 }
 
 .central2izq h2{
@@ -129,7 +125,6 @@ h1{
     display:block;
     width: 46%;
     max-width: 50%;
-    background-color: yellow;
     justify-content:center;
     align-content: center;
     margin-left: 8%;
@@ -144,7 +139,7 @@ h1{
     border-radius: 30px;
     width: 69px;
     height: 43px;
-    padding: 10 25;
+    padding: 5 25;
     background: #F3603B;
     border-style: none;
     color: white;
@@ -170,7 +165,6 @@ h1{
     font-size: 36px;
     color: #232851;
     width: 90%;
-    background-color: #F3603B;
 }
 
 .central2izq p{
@@ -185,22 +179,36 @@ h1{
 
 .divOpiniones{
     display: flex;
+    width: 90%;
+    margin: 10% 5% 0 5%;
 }
 
 .opinionesCentrado img{
-    width: 15%;
+    width: 45%;
+    margin-top: -30px;
+    
+}
+
+.opinionesCentrado picture{
+    display: flex;
+    justify-content: center;
 }
 
 .opinionesCentrado h6{
     padding: 3%;
 }
 
+.opinionesCentrado p{
+    text-align: center;
+}
+
 .opinionesCentrado{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: red;
-    margin: 5px;
+    background: #FAFAFA;
+    padding: 0 1%;
+    text-align: center;
 }
 
 .secOpiniones form{
@@ -222,11 +230,61 @@ h1{
     color: white;
 }
 
+.simplifySection input{
+    background-color: #FFFFFF;
+    color:#F3603B;
+    font-size: 13px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
 footer{
     display: flex;
     flex-direction: row;
-   
-    margin: 5% 20%;
+    justify-content: space-around;
+    padding: 4% 0;
+    background-color: aqua;
+    width: 100%;
+}
+
+.columnasFooter{
+    display: flex;
+    text-align: center;
+}
+
+.columnasFooter{
+    display:block
+}
+
+.logoFooter{
+    padding-bottom: 45%;
+}
+
+.redesFooter{
+    display: block;
+}
+
+.redesFooter i{
+    padding: 0 2%;
+    color:white;
+    font-size: 20px;
+}
+
+.listaFooter{
+    list-style: none;
+}
+
+.listaFooter li{
+    padding-bottom: 15%;
+}
+
+.listaFooter a{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+.buttonFooter input{
+    border-radius: 50px;
+    padding: 3% 4%;
 }
 
 input:hover{
