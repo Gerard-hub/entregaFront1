@@ -6,14 +6,12 @@
 }
 
 body{
-    background-color: grey;
+    
 }
 
-.contenedor{
-    width: 80%;
-    max-width: 1440px;
-    margin: 0 auto;
+body{
     background: #FFFFFF;
+    background-image: url("/imagenes/bg-tablet-pattern.svg");
 }
 
 header{
@@ -44,6 +42,10 @@ header{
 
 .headerNav a{
     color: #242E52;
+}
+
+#hamburguesa{
+    display:none;
 }
 
 .buttonSubmit{
@@ -116,7 +118,7 @@ h1{
 }
 
 .central2izq h2{
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     font-size: 36px;
 }
 
@@ -326,4 +328,43 @@ i{
 i:hover{
     color: #F3603B;
     /* background-color: #1E1E26; */
+}
+
+@media (max-width: 768px){
+    #hamburguesa{
+        display: flex;
+        width: 3%;
+        height: 3%;
+    }
+
+    .navHeader, .navegador{
+        display: none;
+    }
+
+    .central, .central2{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        margin: 0%;
+    }
+
+    .centralIzq, .centralDer{
+        display: flex;
+        width: 95%;
+        text-align: center;
+    }
+
+    .centralIzq>p{width: 90%;}
+
+    .centralDer{
+        z-index: -1;
+        position: relative;
+    }
+
+    .central2izq{
+        display: flex;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
 }
